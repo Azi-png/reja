@@ -18,7 +18,7 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  resizeBy.render("harid");
+  res.render("harid");
 });
 
 // app.get("/hello", function (req, res) {
