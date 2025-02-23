@@ -1,1 +1,275 @@
-<div>Hello</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+    </head>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left-icons">
+              <a href="" class="link_href">
+                <div class="icon">
+                  <img src="icon/Facebook.svg" class="icon-1" />
+                </div>
+              </a>
+              <a href="" class="link_href">
+                <div class="icon">
+                  <img src="icon/Instagram.svg" class="icon-1" />
+                </div>
+              </a>
+              <a href="" class="link_href">
+                <div class="icon">
+                  <img src="icon/Linkeding.svg" alt="" class="icon-1" />
+                </div>
+              </a>
+              <a href="" class="link_href">
+                <div class="icon">
+                  <img src="icon/Twitter.svg" alt="" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Youtube.svg" alt="" class="icon-1" />
+                </div>
+              </a>
+              <a href="" class="link_href">
+                <div class="icon">
+                  <img src="icon/Dribbble.svg" alt="" class="icon-1" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_2">
+              <div class="left_2-1"><span id="y">Age:</span><%=user.age%></div>
+              <div class="left_2-1">
+                <span id="y">Recidance:</span><%=user.residence%>
+              </div>
+              <div class="left_2-1"><span id="y">Frelance:</span>Aviable</div>
+              <div class="left_2-1">
+                <span id="y">Address:</span><%=user.address%>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_3">
+            <h3>Languages</h3>
+
+            <div class="language">
+              <p>Bangla <span>100%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <p>English <span>80%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <p>Spanish <span>60%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+            <h3>Skills</h3>
+
+            <div class="language">
+              <p>Html <span>90%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <p>Css <span>85%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <p>Js <span>80%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="language">
+              <p>NodeJs <span>75%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="language">
+              <p>Phyton <span>85%</span></p>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_5">
+            <h3>Extra Skills</h3>
+            <ul>
+              <li>
+                <img src="icon/Icons.svg" alt="icon" /> Bootstrap, Materialize
+              </li>
+              <li>
+                <img src="icon/Icons.svg" alt="icon" /> Stylus, Sass, Less
+              </li>
+              <li>
+                <img src="icon/Icons.svg" alt="icon" /> Gulp, Webpack, Grunt
+              </li>
+              <li><img src="icon/Icons.svg" alt="icon" /> GIT Knowledge</li>
+            </ul>
+          </div>
+          <div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+          <!-- Top Section -->
+          <div class="top">
+            <div class="top_1">
+              <div class="mid_top_frame">
+                <div class="round_yellow"></div>
+                <div class="round_green"></div>
+                <div class="round_yellow_1"></div>
+                <div class="round_green_1"></div>
+                <div class="rectangle_yellow"></div>
+
+                <div class="rectangle_blue"></div>
+                <div class="triangle_red"></div>
+                <div class="mid_top_main_text">
+                  <h1>Doctor neurologists in OHSU Hospital</h1>
+                </div>
+                <div class="mid_top_text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                    volutpat feugiat placerat lobortis. Natoque rutrum semper
+                    sed suspendisse nunc lectus.
+                  </p>
+                </div>
+                <a class="link" href="">Hire → </a>
+              </div>
+            </div>
+            <img class="doctor" src="images/doctor.png" alt="" />
+          </div>
+
+          <!-- Bottom Section -->
+          <div class="bottom">
+            <div class="bottom_top">
+              <div class="bottom_content">
+                <h1>My Services</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  lorem ipsum
+                </p>
+              </div>
+            </div>
+            <div class="bottom_bottom">
+              <div class="box1">
+                <img src="menu_icon/coding.svg" alt="" />
+                <h3>web development</h3>
+                <p>blog, e-commerce</p>
+              </div>
+              <div class="box1">
+                <img src="menu_icon/uiux.svg" alt="" />
+                <h3>uI/uX design</h3>
+                <p>Mobile app, website design</p>
+              </div>
+              <div class="box1">
+                <img src="menu_icon/microphone.svg" alt="" />
+                <h3>sound design</h3>
+                <p>Voice Over, Beat Making</p>
+              </div>
+              <div class="box1">
+                <img src="menu_icon/game.svg" alt="" />
+                <h3>game design</h3>
+                <p>Character Design, Props & Objects</p>
+              </div>
+              <div class="box1">
+                <img src="menu_icon/photographer.svg" alt="" />
+                <h3>photography</h3>
+                <p>portrait, product photography</p>
+              </div>
+              <div class="box1">
+                <h3>advertising</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                  nulla diam in ac dictum a urna viverra morbi.
+                </p>
+                <a class="order" href="">Order Now ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <div class="sidebar">
+            <div class="toggle-theme">
+              <img src="menu_icon/Contrast.svg" alt="" />
+              <!-- Dark mode tugmasi -->
+            </div>
+            <ul>
+              <li class="active">
+                <div class="icon home-icon"><i class="fas fa-home"></i></div>
+                <span class="tooltip">Home</span>
+              </li>
+              <li>
+                <div class="icon"><i class="fas fa-code"></i></div>
+              </li>
+              <li>
+                <div class="icon"><i class="fas fa-user-graduate"></i></div>
+              </li>
+              <li>
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+              </li>
+              <li>
+                <div class="icon"><i class="fa-solid fa-file"></i></div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa-duotone fa-solid fa-comment"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
