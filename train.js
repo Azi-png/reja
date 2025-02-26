@@ -8,28 +8,28 @@ masalani yechimi:
 Qilgan Yechimingiz…
 
 */
-function countLetter(harf, matn) {
-  if (
-    typeof harf !== "string" ||
-    typeof matn !== "string" ||
-    harf.length !== 1
-  ) {
-    return "Birinchi parametr bitta harf, ikkinchisi esa so'z bolsing!";
-  }
+// function countLetter(harf, matn) {
+//   if (
+//     typeof harf !== "string" ||
+//     typeof matn !== "string" ||
+//     harf.length !== 1
+//   ) {
+//     return "Birinchi parametr bitta harf, ikkinchisi esa so'z bolsing!";
+//   }
 
-  let sanash = 0;
-  for (let belgi of matn) {
-    if (belgi === harf) {
-      sanash++;
-    }
-  }
-  return sanash;
-}
+//   let sanash = 0;
+//   for (let belgi of matn) {
+//     if (belgi === harf) {
+//       sanash++;
+//     }
+//   }
+//   return sanash;
+// }
 
-console.log(countLetter("e", "engineer")); // 3
-console.log(countLetter("n", "enginnnnneer")); // 2
-console.log(countLetter("r", "engineer")); // 1
-console.log(countLetter("p", "engineer")); // 0
+// console.log(countLetter("e", "engineer")); // 3
+// console.log(countLetter("n", "enginnnnneer")); // 2
+// console.log(countLetter("r", "engineer")); // 1
+// console.log(countLetter("p", "engineer")); // 0
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -56,7 +56,8 @@ console.log(countLetter("p", "engineer")); // 0
 //   }
 // }
 // console.log("passed here 0");
-// maslahatBering(65, (err, data) => {
+
+// maslahatBering(38, (err, data) => {
 //   if (err) console.log("ERROR:", err);
 //   else {
 //     console.log("javob:", data);
