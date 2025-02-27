@@ -1,3 +1,16 @@
+//task B
+function countLetter(harf, jumla) {
+  let count = 0;
+  for (let i = 0; i < jumla.length; i++) {
+    if (jumla[i] === harf) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countLetter("e", "engineeeeeeeer")); // 3
+
 /*Masalani izohi
 A-TASK: 
 
