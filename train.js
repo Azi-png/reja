@@ -1,15 +1,55 @@
-//task B
-function countLetter(harf, jumla) {
-  let count = 0;
-  for (let i = 0; i < jumla.length; i++) {
-    if (jumla[i] === harf) {
-      count++;
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  getTime() {
+    return new Date().toLocaleTimeString("uz-UZ").slice(0, 5);
+  }
+
+  qoldiq() {
+    console.log(
+      `Hozir ${this.getTime()}da ${this.non}ta non, ${
+        this.lagmon
+      }ta lagmon va ${this.cola}ta cola mavjud!`
+    );
+  }
+
+  sotish(nomi, soni) {
+    if (this[nomi] >= soni) {
+      this[nomi] -= soni;
+      console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} sotildi!`);
+    } else {
+      console.log(`Hozir ${this.getTime()}da yetarli ${nomi} yo'q!`);
     }
   }
-  return count;
+
+  qabul(nomi, soni) {
+    this[nomi] += soni;
+    console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} qabul qilindi!`);
+  }
 }
 
-console.log(countLetter("e", "engineeeeeeeer")); // 3
+const shop = new Shop(7, 5, 2);
+shop.qoldiq();
+shop.sotish("non", 3);
+shop.qabul("cola", 4);
+shop.qoldiq();
+
+//task B
+// function countLetter(harf, jumla) {
+//   let count = 0;
+//   for (let i = 0; i < jumla.length; i++) {
+//     if (jumla[i] === harf) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countLetter("e", "engineeeeeeeer")); // 3
 
 /*Masalani izohi
 A-TASK: 
