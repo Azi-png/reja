@@ -1,42 +1,59 @@
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// D-TASK:
 
-  getTime() {
-    return new Date().toLocaleTimeString("uz-UZ").slice(0, 5);
-  }
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
-  qoldiq() {
-    console.log(
-      `Hozir ${this.getTime()}da ${this.non}ta non, ${
-        this.lagmon
-      }ta lagmon va ${this.cola}ta cola mavjud!`
-    );
-  }
-
-  sotish(nomi, soni) {
-    if (this[nomi] >= soni) {
-      this[nomi] -= soni;
-      console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} sotildi!`);
-    } else {
-      console.log(`Hozir ${this.getTime()}da yetarli ${nomi} yo'q!`);
-    }
-  }
-
-  qabul(nomi, soni) {
-    this[nomi] += soni;
-    console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} qabul qilindi!`);
+// @MITASK
+function checkContent(a, b) {
+  if (a.split("").sort().join("") === b.split("").sort().join("")) {
+    return true;
+  } else {
+    return false;
   }
 }
 
-const shop = new Shop(7, 5, 2);
-shop.qoldiq();
-shop.sotish("non", 3);
-shop.qabul("cola", 4);
-shop.qoldiq();
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("hello", "world"));
+
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
+
+//   getTime() {
+//     return new Date().toLocaleTimeString("uz-UZ").slice(0, 5);
+//   }
+
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.getTime()}da ${this.non}ta non, ${
+//         this.lagmon
+//       }ta lagmon va ${this.cola}ta cola mavjud!`
+//     );
+//   }
+
+//   sotish(nomi, soni) {
+//     if (this[nomi] >= soni) {
+//       this[nomi] -= soni;
+//       console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} sotildi!`);
+//     } else {
+//       console.log(`Hozir ${this.getTime()}da yetarli ${nomi} yo'q!`);
+//     }
+//   }
+
+//   qabul(nomi, soni) {
+//     this[nomi] += soni;
+//     console.log(`Hozir ${this.getTime()}da ${soni}ta ${nomi} qabul qilindi!`);
+//   }
+// }
+
+// const shop = new Shop(7, 5, 2);
+// shop.qoldiq();
+// shop.sotish("non", 3);
+// shop.qabul("cola", 4);
+// shop.qoldiq();
 
 //task B
 // function countLetter(harf, jumla) {
