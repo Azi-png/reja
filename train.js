@@ -1,19 +1,28 @@
+// E-TASK:
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+function reverse(a) {
+  return a.split("").reverse().join("");
+}
+
+console.log(reverse("hello"));
 // D-TASK:
 
 // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 // MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 
 // @MITASK
-function checkContent(a, b) {
-  if (a.split("").sort().join("") === b.split("").sort().join("")) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function checkContent(a, b) {
+//   if (a.split("").sort().join("") === b.split("").sort().join("")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("hello", "world"));
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("hello", "world"));
 
 // class Shop {
 //   constructor(non, lagmon, cola) {
